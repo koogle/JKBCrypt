@@ -26,8 +26,11 @@ JKBCrypt is an implementation of bcrypt written in Swift2. It currently is able 
     s.source           = { :git => "https://github.com/koogle/JKBCrypt.git", :tag => s.version.to_s }
 # s.social_media_url = 'https://twitter.com/new_io'
 
-    s.platform     = :ios, '8.0', :tvos, '9.0'
     s.requires_arc = true
+    s.ios.deployment_target = '8.0'
+    s.osx.deployment_target = '10.9'
+    s.tvos.deployment_target = '9.0'
+    s.watchos.deployment_target = '2.0'
 
     s.source_files = 'Pod/Classes/**/*'
     s.resource_bundles = {
